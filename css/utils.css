@@ -1,0 +1,43 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Roboto+Mono:ital,wght@1,100&family=Roboto:wght@300&display=swap');
+
+.max-width-1{
+    max-width: 80vw;
+
+}
+.max-width-2{
+    max-width: 533px;
+
+}
+.m-auto{
+    margin: auto;
+}
+.my-2{
+    margin-bottom: 12px ;
+    margin-top: 12px ;
+}
+.btn{
+
+    padding: 0px 15px ;
+    border: 3px solid black;
+    border-radius: 5px;
+    font-family: var(--font1);
+    font-size:16px;
+    cursor: pointer;
+    transition: all 1.3s ease-in-out ;
+   
+
+}
+.btn:hover{
+    color:white;
+    background-color:lightcoral;
+}
+.form-input{
+    padding: 0px 5px;
+    font-size: 16px;
+    padding-top:3px 2px;
+    border: 2px solild black;
+    border-radius: 5px;
+    font-family: var(--font1);
+} 

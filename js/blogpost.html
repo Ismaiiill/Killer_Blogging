@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog_Application</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="js/css/blogpost.css">
+    <link rel="stylesheet" href="css\mobile.css">
+
+</head>
+
+<BODY>
+    <nav class="navigation max-width-1 m-auto">
+        <div class="nav-left">
+            <span>iBlog</span>
+            <ul>
+                <li><a href="/">home</a></li>
+                <li><a href="/">about</a></li>
+                <li><a href="js/contact.html">contact</a></li>           
+            </ul>
+
+
+        </div>
+        <div class="nav-right">
+            <form action="js/search.html"method="get">
+                <input class="form-input" type="text" 
+                name="query" placeholder="articale Search">
+                <button class="btn">Search</button>    
+            </form>       
+        </div>
+
+    </nav>
+    <div class="max-width-1 m-auto" >
+        <hr>
+    </div>
+   <div class="post-img">
+        <!-- <img src="../vecteezy_school-s-road-to-success-stack-of-book-trophy-bag-school-earth-globe-education-and-learning-icon-suitable-for-landing-page-mobile-app-sticker-poster-flyer-article-and-banner-vector_1925932/581.jpg" alt="article"> -->
+        <img src="../img/3.png" alt="article">
+   </div>
+   <div class="m-auto blog-post-content content m-auto max-width-2 m-auto my-2">
+        <h1> The heaven for bloggers</h1>
+        <div class="blogpost-meta">
+            <div class="author-info">
+                By-Md ismail/
+                ismail1332000@gmail.com
+
+            </div>
+           
+            <div class="social-info">
+                <a href="">review</a>
+                <a href="">share</a>
+            
+
+            </div>
+        </div>
+        <p>For other uses, see Code (disambiguation). "Encoding" redirects here. For other uses, see Encoding (disambiguation).
+            For usage of the code tag (<code>…</code>) on Wikipedia, see Help:Wikitext § Text formatting.
+            For technical reasons, terms beginning with "Code#" redirect here. For the EPs by Ladies' Code, see Code 01 Bad Girl and Code 02 Pretty Pretty.
+            
+            This article needs additional citations for verification. Please help improve this article by adding citations to reliable sources. Unsourced material may be challenged and removed.
+            Find sources: "Code" – news · newspapers · books · scholar · JSTOR (March 2010) (Learn how and when to remove this template message)
+            In communications and information processing, code is a system of rules to convert information—such as a letter, word, sound, image, or gesture—into another form, sometimes shortened or secret, for communication through a communication channel or storage in a storage medium. An early example is an invention of language, which enabled a person, through speech, to communicate what they thought, saw, heard, or felt to others. But speech limits the range of communication to the distance a voice can carry and limits the audience to those present when the speech is uttered. The invention of writing, which converted spoken language into visual symbols, extended the range of communication across space and time.
+            
+            The process of encoding converts information from a source into symbols for communication or storage. Decoding is the reverse process, converting code symbols back into a form that the recipient understands, such as English or/and Spanish.
+            
+            One reason for coding is to enable communication in places where ordinary plain language, spoken or written, is difficult or impossible. For example, semaphore, where the configuration of flags held by a signaler or the arms of a semaphore tower encodes parts of the message, typically individual letters, and numbers. Another person standing a great distance away can interpret the flags and reproduce the words sent.
+            
+            Theory
+            Main article: Coding theory
+            In information theory and computer science, a code is usually considered as an algorithm that uniquely represents symbols from some source alphabet, by encoded strings, which may be in some other target alphabet. An extension of the code for representing sequences of symbols over the source alphabet is obtained by concatenating the encoded strings.
+            
+            Before giving a mathematically precise definition, this is a brief example. The mapping
+            
+            �
+            =
+            {
+            �
+            ↦
+            0
+            ,
+            �
+            ↦
+            01
+            ,
+            �
+            ↦
+            011
+            }
+            C = \{\, a\mapsto 0, b\mapsto 01, c\mapsto 011\,\}
+            is a code, whose source alphabet is the set 
+            {
+            �
+            ,
+            �
+            ,
+            �
+            }
+            \{a,b,c\} and whose target alphabet is the set 
+            {
+            0
+            ,
+            1
+            }
+            \{0,1\}. Using the extension of the code, the encoded string 0011001 can be grouped into codewords as 0 011 0 01, and these in turn can be decoded to the sequence of source symbols acab.
+            
+            Using terms from formal language theory, the precise mathematical definition of this concept is as follows: let S and T be two finite sets, called the source and target alphabets, respectively. A code 
+            �
+            :
+            �
+            →
+            �
+            ∗C:\, S \to T^* is a total function mapping each symbol from S to a sequence of symbols over T. The extension 
+            �
+            ′
+            C' of 
+            �
+            C, is a homomorphism of 
+            �
+            ∗S^{*} into 
+            �
+            ∗T^{*}, which naturally maps each sequence of source symbols to a sequence of target symbols.
+            
+            Variable-length codes
+            Main article: Variable-length code
+            In this section, we consider codes that encode each source (clear text) character by a code word from some dictionary, and concatenation of such code words give us an encoded string. Variable-length codes are especially useful when clear text characters have different probabilities; see also entropy encoding.
+            
+            A prefix code is a code with the "prefix property": there is no valid code word in the system that is a prefix (start) of any other valid code word in the set. Huffman coding is the most known algorithm for deriving prefix codes. Prefix codes are widely referred to as "Huffman codes" even when the code was not produced by a Huffman algorithm. Other examples of prefix codes are country calling codes, the country and publisher parts of ISBNs, and the Secondary Synchronization Codes used in the UMTS WCDMA 3G Wireless Standard.
+            
+            Kraft's inequality characterizes the sets of codeword lengths that are possible in a prefix code. Virtually any uniquely decodable one-to-many code, not necessarily a prefix one, must satisfy Kraft's inequality.
+            
+            Error-correcting codes
+            Main article: Error detection and correction
+            See also: Block code
+            Codes may also be used to represent data in a way more resistant to errors in transmission or storage. This so-called error-correcting code works by including carefully crafted redundancy with the stored (or transmitted) data. Examples include Hamming codes, Reed–Solomon, Reed–Muller, Walsh–Hadamard, Bose–Chaudhuri–Hochquenghem, Turbo, Golay, algebraic geometry codes, low-density parity-check codes, and space–time codes. Error detecting codes can be optimised to detect burst errors, or random errors.</p>
+
+       
+    
+    </div>
+
+   
+
+  
+    <div class="home-articles max-width-1 m-auto">
+        <h2> People who read this also read this</h2>
+        <div class="home-article"> 
+            <div class="home-article-img">
+            <img src="../vecteezy_school-s-road-to-success-stack-of-book-trophy-bag-school-earth-globe-education-and-learning-icon-suitable-for-landing-page-mobile-app-sticker-poster-flyer-article-and-banner-vector_1925932\581.jpg" alt="article">
+        </div>
+            <div class="home-article-content">
+                <a href="/blogpost.html">     <h3>
+                    Lorem ipsum dolor sit amet consec...
+                </h3></a>
+           
+                <div>Author Name</div>
+                <span>07 january 6 min read</span>
+
+            </div>
+            
+        </div>
+        <div class="home-article"> 
+            <div class="home-article-img">
+            <img src="../vecteezy_school-s-road-to-success-stack-of-book-trophy-bag-school-earth-globe-education-and-learning-icon-suitable-for-landing-page-mobile-app-sticker-poster-flyer-article-and-banner-vector_1925932\581.jpg" alt="article">
+        </div>
+            <div class="home-article-content">
+                <a href="/blogpost.html">     <h3>
+              Best blog for them who id finding job in web development...
+                </h3></a>
+           
+                <div>Author Name</div>
+                <span>07 january 6 min read</span>
+
+            </div>
+            
+        </div>
+        <div class="home-article"> 
+            <div class="home-article-img">
+            <img src="../vecteezy_school-s-road-to-success-stack-of-book-trophy-bag-school-earth-globe-education-and-learning-icon-suitable-for-landing-page-mobile-app-sticker-poster-flyer-article-and-banner-vector_1925932\581.jpg" alt="article">
+        </div>
+            <div class="home-article-content">
+                <a href="/blogpost.html">     <h3>
+                  SDE is the highest paying job in current job market.. 
+                </h3></a>
+           
+                <div>Author Name</div>
+                <span>07 january 6 min read</span>
+
+            </div>
+            
+        </div>
+
+
+
+    </div>
+ 
+    <div class="footer ">
+        copywrite &copy: iBlog.com<a href="">Credits: typewrite vectors by  Vecteezy</a>
+    </div>
+    <a href=""></a>
+
+</body>
+
+</html>
